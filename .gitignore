@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.sqlite3
+env/
+venv/
+ENV/
+env.bak/
+*.log
+
+# Django
+db.sqlite3
+media/
+*.pot
+*.pyc
+*.pyo
+staticfiles/
+local_settings.py
+
+# Environment Variables
+.env
+.env.*
+
+# VSCode
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Docker
+*.pid
+*.seed
+*.bak
+*.tar
+docker-compose.override.yml
+
+# Redis dump
+dump.rdb
+
+# Migrations (optional if you don't want to commit them)
+**/migrations/*.pyc
+**/migrations/*.py
+!*/migrations/__init__.py
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System
+Thumbs.db
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyc
+*.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Virtualenv
+venv/
+
+# Django
+db.sqlite3
+media/
+static/
+*.log
+
+# Docker
+*.pid
+*.db
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+venv/
+*.pyc
+__pycache__/
+*.sqlite3
+.env
+media/

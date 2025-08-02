@@ -1,0 +1,35 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+
+# Ignore local Django DB
+*.sqlite3
+
+# Ignore media and static files (handled in runtime)
+media/
+staticfiles/
+
+# Ignore environment variables
+.env
+.env.*
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# Ignore test artifacts
+*.pytest_cache
+.coverage
+htmlcov/
+
+# Ignore migrations if auto-generated
+**/migrations/*.pyc
+**/migrations/*.py
+!*/migrations/__init__.py
