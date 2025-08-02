@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 import threading
+import os 
 
 class CoreConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
@@ -10,7 +11,11 @@ class CoreConfig(AppConfig):
 
         def run_async():
             try:
-                run_ingestion_if_needed()
+                # ✅ CI environment me skip karna hai ingestion ko
+                if os.getenv("CI") != "true":
+                    run_ingestion_if_needed()
+                else:
+                    print("[INFO] Skipping auto-ingestion in CI environment.")
             except Exception as e:
                 print(f"[ERROR] Auto ingestion failed: {e}")
 
