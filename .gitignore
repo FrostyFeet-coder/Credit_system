@@ -14,7 +14,6 @@ env.bak/
 
 # Django
 db.sqlite3
-media/
 *.pot
 *.pyc
 *.pyo
@@ -69,7 +68,6 @@ venv/
 
 # Django
 db.sqlite3
-media/
 static/
 *.log
 
@@ -89,4 +87,3 @@ venv/
 __pycache__/
 *.sqlite3
 .env
-media/
